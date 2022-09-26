@@ -4,7 +4,9 @@ class Vehicle{
         this.model = model;
         this.year = year;
     }
+    // method named information
     information(){
+        // console commands for the output
         console.log(`Make: ${this.make}.`);
         console.log(`Model: ${this.model}.`);
         console.log(`Year: ${this.year}.`);
@@ -17,6 +19,7 @@ class Vehicle{
 // car class will inherit data from Vehicle class
 class Car extends Vehicle{
     constructor(make, model, year, doors){
+        // this is super class
         super(make, model, year);
         this.doors = doors;
     }
